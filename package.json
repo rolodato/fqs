@@ -1,6 +1,6 @@
 {
   "name": "fqs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pretty-print URLs",
   "main": "index.js",
   "bin": {
