@@ -1,6 +1,6 @@
 # fqs
 
-Pretty-print URLs to a human-readable, copy-pasteable format
+Pretty-print query strings and hash fragments in a human-readable, copy-pasteable format
 
 ## Installation
 
