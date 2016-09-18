@@ -2,8 +2,8 @@ const assert = require('assert');
 const fqs = require('../lib');
 
 const expected = [
-    'https://example.com/foo?',
-    'c=2',
+    'https://example.com/foo',
+    '?c=2',
     'd=3',
     '#a=0',
     'b=1'

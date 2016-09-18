@@ -16,12 +16,12 @@ const fqs = function (input) {
     const u = clean(url.parse(input, true));
     const hash = qs.parse(u.hash.replace('#', ''));
     if (!u.protocol) {
-    	return '';
+        return '';
     } else {
-	    return [`${u.protocol}//${u.auth}${u.host}${u.pathname}${!isEmpty(u.query) ? '?' : ''}`,
-	    	u.query ? queryLines(u.query) : '',
-	    	!isEmpty(hash) ? '#' + queryLines(hash) : ''
-	    ].filter(line => line.length > 0).join('\n');
+        return [`${u.protocol}//${u.auth}${u.host}${u.pathname}`,
+            !isEmpty(u.query) ? '?' + queryLines(u.query) : '',
+            !isEmpty(hash) ? '#' + queryLines(hash) : ''
+        ].filter(line => line.length > 0).join('\n');
     }
 };
 
