@@ -1,0 +1,28 @@
+{
+  "name": "fqs",
+  "version": "1.0.0",
+  "description": "Pretty-print URLs",
+  "main": "index.js",
+  "bin": {
+    "fqs": "./index.js"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rolodato/fqs.git"
+  },
+  "author": "Rodrigo López Dato <rolodato@rolodato.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/rolodato/fqs/issues"
+  },
+  "homepage": "https://github.com/rolodato/fqs#readme",
+  "devDependencies": {
+    "assert": "^1.4.1"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
