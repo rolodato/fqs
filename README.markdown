@@ -12,8 +12,8 @@ npm install -g fqs
 
 ```
 $ fqs https://example.com/foo?d=3&c=2#b=1&a=0
-https://example.com/foo?
-c=2
+https://example.com/foo
+?c=2
 d=3
 #a=0
 b=1
