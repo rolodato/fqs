@@ -2,7 +2,8 @@ const url = require('url');
 const qs = require('querystring');
 
 const queryLines = function (parsedQuery) {
-    return parsedQuery ? Object.keys(parsedQuery).sort().map(k => `${k}=${parsedQuery[k]}`).join('\n') : '';
+    const queryElement = key => parsedQuery[key] ? `${key}=${parsedQuery[key]}` : key;
+    return parsedQuery ? Object.keys(parsedQuery).sort().map(queryElement).join('\n') : '';
 };
 
 const clean = function (obj) {
