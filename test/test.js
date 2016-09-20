@@ -10,3 +10,4 @@ const expected = [
 ].join('\n');
 
 assert.equal(fqs('https://example.com/foo?d=3&c=2#b=1&a=0'), expected);
+assert.equal(fqs(''), '');
