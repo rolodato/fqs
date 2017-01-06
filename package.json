@@ -7,7 +7,7 @@
     "fqs": "./index.js"
   },
   "scripts": {
-    "test": "eslint . && node test/test.js"
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",
@@ -18,12 +18,5 @@
   "bugs": {
     "url": "https://github.com/rolodato/fqs/issues"
   },
-  "homepage": "https://github.com/rolodato/fqs#readme",
-  "devDependencies": {
-    "assert": "^1.4.1",
-    "eslint": "^3.5.0"
-  },
-  "dependencies": {
-    "minimist": "^1.2.0"
-  }
+  "homepage": "https://github.com/rolodato/fqs#readme"
 }
