@@ -2,8 +2,12 @@ const url = require('url');
 const qs = require('querystring');
 
 const queryLines = function (parsedQuery) {
-    const queryElement = key => parsedQuery[key] ? `${key}=${parsedQuery[key]}` : key;
-    return parsedQuery ? Object.keys(parsedQuery).sort().map(queryElement).join('\n') : '';
+    const keys = Object.keys(parsedQuery).sort();
+    const queryElement = (key, i) => {
+        const ampersandExceptLast = i === keys.length - 1 ? '' : '&';
+        return (parsedQuery[key] ? `${key}=${parsedQuery[key]}` : key) + ampersandExceptLast;
+    }
+    return parsedQuery ? keys.map(queryElement).join('\n') : '';
 };
 
 const clean = function (obj) {
